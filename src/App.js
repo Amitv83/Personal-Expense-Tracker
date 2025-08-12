@@ -1,11 +1,25 @@
-import logo from './logo.svg';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Dashboard from './Pages/Dashboard.js';
+import Transaction from './Pages/Transaction.js';
+import Reports from './Pages/Reports.js';
+import Navbar from './Components/Navbar.js';
+import Notfound from './Pages/NotFound.js';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Finance Tracker</h1>
-    </div>
+    <BrowserRouter>
+      <div>
+        <Navbar/>
+        <Routes>
+          <Route path="/" element = {<Dashboard/>}/>
+          <Route path="/report" element = {<Reports/>}/>
+          <Route path="/transaction" element = {<Transaction/>}/>
+          <Route path="*" element = {<Notfound/>}/>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
