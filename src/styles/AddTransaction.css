@@ -1,0 +1,71 @@
+
+.add-transaction-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .transaction-box {
+    background: #fae6fd;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: inset 7px 3px 27px hwb(308 73% 1% / 0.837);
+    border: 1px solid #e9a5dd;
+  }
+  .transaction-box input{
+    width: 374px;
+  }
+  
+  .transaction-type {
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .transaction-type input{
+    width: 100%;
+  }
+  
+  .transaction-type label {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  textarea{
+    width: 374px !important;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #dad5d5;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    border: 1px solid #007bff;
+  }
+  
+  button {
+    width: 100%;
+    background: #dc3545;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #571717;
+  }

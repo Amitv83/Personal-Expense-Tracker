@@ -6,6 +6,7 @@ import Transaction from './Pages/Transaction.js';
 import Reports from './Pages/Reports.js';
 import Navbar from './Components/Navbar.js';
 import Notfound from './Pages/NotFound.js';
+import AddTransaction from './Pages/AddTransaction.js';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element = {<Dashboard/>}/>
           <Route path="/report" element = {<Reports/>}/>
           <Route path="/transaction" element = {<Transaction/>}/>
+          <Route path="/add-transaction" element = {<AddTransaction/>}/>
           <Route path="*" element = {<Notfound/>}/>
         </Routes>
       </div>
