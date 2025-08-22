@@ -53,7 +53,7 @@
     border: 1px solid #007bff;
   }
   
-  button {
+  .submit-btn {
     width: 100%;
     background: #dc3545;
     color: white;
@@ -66,6 +66,6 @@
     transition: background 0.3s;
   }
   
-  button:hover {
+  .submit-btn :hover {
     background: #571717;
   }

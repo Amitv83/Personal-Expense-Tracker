@@ -50,8 +50,6 @@ function AddTransaction() {
     setType("Expense");
     setAmount("");
     
-   
-    
   }
 
   useEffect(()=>{
@@ -74,10 +72,10 @@ function AddTransaction() {
       <div className="transaction-box">
         <div className="transaction-type">
           <label>
-            <input type="radio" value="Expense" checked={type=="Expense"} onChange={()=>setType("Expense")}/> Expense
+            <input type="radio" value="Expense" checked={type==="Expense"} onChange={()=>setType("Expense")}/> Expense
           </label>
           <label>
-            <input type="radio" value="Income" checked={type=="Income"} onChange={()=>setType("Income")}/> Income
+            <input type="radio" value="Income" checked={type==="Income"} onChange={()=>setType("Income")}/> Income
           </label>
         </div>
         <input type="number" value={amount} placeholder="Amount (₹)" onChange={(e)=>setAmount(e.target.value)} />
@@ -93,7 +91,7 @@ function AddTransaction() {
         </select>
         <textarea value={description} placeholder="Description" onChange={(e)=>setDescription(e.target.value)} ></textarea>
         <input value={date} type="date" onChange={(e)=>setDate(e.target.value)} />
-        <button onClick={handleAddTransaction}>{editIndex==null?'Add Transaction':'Update Transaction'}</button>
+        <button className="submit-btn" onClick={handleAddTransaction}>{editIndex==null?'Add Transaction':'Update Transaction'}</button>
       </div>
     </div>
   );
