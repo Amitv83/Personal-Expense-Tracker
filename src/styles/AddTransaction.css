@@ -7,13 +7,10 @@
   
   .transaction-box {
     background: #fae6fd;
-    padding: 25px;
+    padding: 35px;
     border-radius: 10px;
     box-shadow: inset 7px 3px 27px hwb(308 73% 1% / 0.837);
     border: 1px solid #e9a5dd;
-  }
-  .transaction-box input{
-    width: 374px;
   }
   
   .transaction-type {
@@ -34,9 +31,6 @@
     cursor: pointer;
   }
   
-  textarea{
-    width: 374px !important;
-  }
   
   input, select, textarea {
     width: 100%;
